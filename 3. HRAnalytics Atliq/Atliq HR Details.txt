@@ -1,0 +1,44 @@
+CV Writeup
+HR Data analytics – HR Domain [Power BI | Excel]
+• Designed a Power BI dashboard to track employee data for the HR team, including working hours, attendance, performance, and leaves. 
+ The dashboard streamlined HR processes and increased efficiency.
+• This Dashboard can save 3-4hrs of work for the HR daily.
+
+Data : https://codebasics.io/resources/resume-project-data-analytics (CodeBasics)
+
+The project was mainly a Resume Project Challenge by CodeBasics, and the dataset was provided by CodeBasics as an Excel file containing multiple sheets.
+The dataset was based on the Human Resource Management of Atliq Harware for the 3 months. The HR was finding it difficult to see the data in an excel 
+format as it was in an complex format. So the HR wanted to visualize the data insights in a more granular way. Moreover, the director of the company 
+wanted to know which was the best time for project releases , work space capacity management,team meetings,building management based on the employees 
+availability. There are many more metrics which I am going to find while building this report.
+
+The excel file had a sheet which contained the reference of the attendence abriviations like "P" for present, "WFH" for work from home,
+"HWFH" for Half Work From Home ,etc. which also needed to be considered while building the Report.
+
+Now as I was given one excel file with multiple sheets having different column headers, so to merge all the sheets together in the Power BI , I had to 
+create a template query which is the copy of the main file. Then after removing the unnecessary columns from the template and deleting any M code step 
+refering to the column header , I created a function to automate the process for all the sheets and also for any other sheets that could be added in future. 
+
+Then I move on to creating DAX which is the formula brain of Power BI . Creating DAX helps us to visualize data in more granular way. I have divided 
+this into 2 parts , firstly to create Calculated Columns and then creating some Measures. Calculated Columns helps to stamp fixed static values in our tables
+where as Measures create calculated values which only appears in the visualisation and are not stored in the table. Like in this case I have extracted the month 
+fron thr date column ,and to find the count of work from home and Sick leaves added two different calculated coulumns. I even created simpliest of Measures which 
+were available to as Implisit Measures so that I can use that in creating complex Measures. I also created some Measures to find our different parameters of our sales. 
+Like office working days , present days , Work from home % ,etc. 
+
+Attendence Overview:
+Now moving to the Dashboard creation , HR was more interested in seeing the Attendence % , Sick Leave % and Work From Home % . So I have placed those in the left top 
+position of the dashboard as its is the most visible area in the whole sheet. Then the HR wanted to see the Attendence % break down for each employee ID so I have
+added two tables containing the attendence break down for each employee. Then I have added 2 slicers , one containing the Month and another containg the date filed
+which will help the HR to visualize the data between a span of certain dates. I have also added 3 area charts containg the 3 important metrics mentioned above with 
+respect to date and added a trend line to understand the employee behaviour with months. I have added the same metrics beside their respective area charts in a tabular
+format with respect to day of week. I also added a slicer which act as a search bar for employee code , which will help the HR to find a specific employee's details.
+
+KEY Findings: 
+After discussing with the HR , I have found that most employees like to take Work from home mostly on Thursdays or Friday. And Sick leaves on Mondays and Tuseday.
+I have also found that the attendence % starts to decline from the month of June as its is the beginning of the festive seasons. Atliq also wants to shift to 
+Hybrid model of work for better space management and save cost. The HR also shared Insights regarding team meetings or team lunch and other group activities 
+which they are planing to do in middle of the week because of more attendence. By this way this dashboard can save upto 3 - 4 hour of work for HR Daily.
+
+Dashboard : https://app.powerbi.com/view?r=eyJrIjoiNmE5MWNjMTItODE4NC00ZWEyLTk5NWQtNmM1OWQ3NTgwZTg4IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9
+ 
