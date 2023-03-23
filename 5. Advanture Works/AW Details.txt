@@ -1,0 +1,72 @@
+cv writeup
+Sales Insights - Adventure Works Cycles [Power BI]
+(.) Designed a Power BI dashboard to understand Adventure Works Cycles' sales trends over a three-year period.
+(.) This report can assist the organisation in tracking essential business KPIs (sales, revenue, profit, and returns), 
+comparing regional performance, analysing product-level trends and forecasting, and identifying high-value customers, 
+allowing stakeholders to understand the data and make informed decisions.
+(.) This dashboard could help in increasing the revenue and profit by atleast 10% in the next
+year by running promotional offers on top performing products. The dashboard also shows the
+top performing product in terms of highest number of orders and most profit generated to leverage the potential of the products 
+for the upcoming year. Loss-making items with a low order volume and a high return rate can also be discontinued in order to optimise the balance sheet.
+
+
+Data Set Link : https://www.kaggle.com/datasets/ukveteran/adventure-works
+
+For working on this project I have used the dataset from kaggel. In the 1st steps I have imported the data into
+power bi , cleaned the data and transformed the data in power query as per requirements. For eg. from the date table I have extracted 
+granular informations like start of week , day name, month name, year, start of year etc. By extracting these data I can now use 
+these data to  find out yearly/monthly/weekly sales/profit/revennue/returns etc. I can also find informations on products that are sold
+on weekdays /weekends and so that I can run promotional offers. I also had sales of different years in different folders, which I have 
+appended in a single table by importing a single folder . I have even used conditional column in the product table.
+
+After doing basic transformations in the power query I then moved on to the data modeling tab for creating relationships between the table.
+In the data modeling tab I focused on building a normalized model to reduce data redundancy and improve data integrity . For better understanding
+I keep the lookup tables above the data tables so that I understand the downstream filter flow. I used 1 to many relationship with 1 way filtering 
+to reduce complex cross filtering. Then I hide the foreign keys in the data table from report view to prevent invalid filter context. 
+
+Then I move on to creating DAX which is the formula brain of Power BI . Creating DAX helps us to visualize data in more granular way. I have divided 
+this into 2 parts , firstly to create Calculated Columns and then creating some Measures. Calculated Columns helps to stamp fixed static values in our tables
+where as Measures create calculated values which only appears in the visualisation and are not stored in the table. Like in this case I wanted to catagorise 
+customers , so I used calculated coulums to added a columns which help us in catagorizing customers behaviour based on different parametres. I even created 
+simpliest of Measures which were available to as Implisit Measures so that I can use that in creating complex Measures. I also created some Measures to find 
+our different parameters of our sales. In our dataset there is a seperate table for returns , so to find out the total returns I have used "Count" function .
+Where as in the sales table if someone orders item 1 and then item 2 , the order number stayes the same but the order inline are different . So to find the 
+Total Volume of Oredrs I have used "DistinctCount" function . I have also used "ALL" function to create a Measure to calculate the % contribution of all our
+product catagory into sales. I have also used "Related" function to pull a data from another table . Also I have used "Time Inellegence" formula to calculate YTD
+revenue , previous month revenue so that the comany can be aggresive in setting target for the upcoming months.
+
+Sales Summary(Page1): 
+-I created a slicer with “between” style to choose the Time Period so that users can get the sales summary for any specific time period. 
+-I created a Treemaps and a Stacked Bar Chart to display orders by category and subcategory separately so that users can choose the specific 
+ category and subcategory that they want to focus on. And also I edit the interactions so that when users select a specific category, all the 
+ unrelated information will be filtered out.
+-I created a Matrix Table to display the product name, total orders, and return rate. I also applied the conditional formatting to return rates so that 
+ users can easily tell the item with dark background is the item that has the high return rate. 
+-I created a Map to display the total order by continent so that users can easily choose a continent that they are interested in.
+-I created three KPI to display performance for current monthly revenue versus target revenue, monthly orders versus target orders, and monthly returns versus 
+ target returns so that users can easily track the KPI.
+-I created a drillthrough so that when users hover over a product, they can switch to another page with more detailed information about this product such as 
+ profit, return volume, future profit forecast. I also made use of the What-if Parameter feature, it can help them to set a more reasonable price because users 
+ can see the adjusted profit when they change the product price. 
+
+Product Details(Page2):
+- I created three gauge charts to display performace of the current monthly revenue, order vs the target for that month along with current month returns with the 
+ previous month returns. 
+- I also created the line chart showing weekly profit along the forecasted profit for the next 6 weeks to get better understanding of how the profit would look
+ in the next coming weeks.
+- I also created a Area chart showing weekly returns to find any sudden spike or anomalies in return for any particular product.
+- I created a line chart using 'what-if parameter' to see the weekly profit difference by adjusting the price using the slider and also cretaed  a multi row card 
+ that showcased the actual retail price with the adjusted price made using the slider.
+
+
+Customer's Details(Page3):
+-I created a Matrix Table to display the customer name, total orders, and total returns. And also I applied the conditional formatting to total revenue so 
+ that users can easily tell which customer contributed the most revenue.
+-I created three Donut Charts to display the orders by gender, by income level, and by occupation and also a Treemap to display the orders by age so that 
+ users can tell which kind of customers contributed the most revenue.
+-I created a Line and Clustered Column Chart to display the orders and revenue by month so that users can tell when the specific customer ordered products 
+ and how much revenue they contributed for those products.
+-I created a bookmark for the first report page and inserted a right arrow so that users can easily return to the sales summary page.
+
+Dashboard : https://app.powerbi.com/view?r=eyJrIjoiNTNkNmYwYjUtMWZhNi00YzZmLTgwMjktZTRlMThiNzFiNjIzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9 
+
