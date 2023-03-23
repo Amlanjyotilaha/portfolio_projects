@@ -1,0 +1,65 @@
+CV Writeup
+Sales Insights – Brick & motor business [Power BI | SQL]
+• Designed a Power BI dashboard to understand AtliQ hardware goods sales trend.
+• The final dashboard was effective at displaying the sales trend of AtliQ hardware, allowing users 
+to understand the data and make informed decisions.
+• This dashboard could help in increasing the revenue at least by 7% in the next quarter.
+
+Data : https://github.com/codebasics/DataAnalysisProjects/tree/master/1_SalesInsights (codebasics)
+
+The project was mainly a Resume Project Challenge by CodeBasics, and the dataset was provided by CodeBasics as a SQL dump file. 
+The data set is based on the sales of a computer hardware supplier named AtliQ Hardwares' in different regions of India for the last 4 years.
+There was an YoY decline of sales, so the Stakeholders of the company needed to find the root cause of the declining sales. So instead of 
+going through the datas in the excel files of each store of each region they wanted a proper visualization of the whole data in one place . 
+As a result the Managers and Satakeholders can easily find out where they are losing money , why their sales are droping and in which region ,
+along with their best selling poroducts.
+
+Now as the data was given as an SQL dump file , we loaded the data in our database and checked for any anomalies in the data . While doing so we 
+found that some of the regions had no values where as though there were sales still the amounts were either zero or negative values . Also we 
+found that some sales were in USD while maximum sales were in INR . After identifing these anomalies in our data we connected our database with 
+Power BI to transform those anomalies and further data analysis. 
+
+In the Power BI after transforming the amonalies , I then moved on to the data modeling tab for creating relationships between the table.
+In the data modeling tab I focused on building a normalized model to reduce data redundancy and improve data integrity . For better understanding
+I keep the lookup tables above the data tables so that I understand the downstream filter flow. I used 1 to many relationship with 1 way filtering 
+to reduce complex cross filtering. Then I hide the foreign keys in the data table from report view to prevent invalid filter context.
+
+Then I move on to creating DAX which is the formula brain of Power BI . Creating DAX helps us to visualize data in more granular way. I have divided 
+this into 2 parts , firstly to create Calculated Columns and then creating some Measures. Calculated Columns helps to stamp fixed static values in our tables
+where as Measures create calculated values which only appears in the visualisation and are not stored in the table. Like in this case I made a calculated column to 
+convert those price which were in USD to INR.I even created simpliest of Measures which were available to as Implisit Measures so that I can use that in creating
+complex Measures. I also created some Measures to find our different parameters of our sales. Like Total Profit Margine , Total Sales in terms of quantity , total 
+revenue, along with Profit Margine Contribution % , Profit Margine % , and Revenue Margine %. 
+
+Key Insights :
+In this page I mainly focused on the key metrics of the business showcasing the total revenue,sales quantity , revenue by market, sales by market ,along with 
+revenue trend and top 5 products and customers based on revenue . I have also added 2 slicer giving access to the year and months which will help in jumping to 
+a particular month of an year. I can see that there is a sharp decline in the revenue since the first year , so further investigation is needed to find the 
+reason behind the downfall.
+
+Profit Analysis:
+To further find the revenue decline , I have created a separate report on the Profit where along with the revenue trend graph, yearly and monthly slicer ,
+I have added bar charts showcasing profit % by market,Profit Contribution % by market , Revenue % contribution by market and also added a matrix to showcase 
+the breakdown by customers.By doing this I found out that in some store where Atliq is giving products at low profit % margine, those stores are 
+contritibuting more profit % , where as some stores where Atliq is giving products at negative profit % margine , those stores are contributing least profit %.
+So, maybe Atliq needs to take some steps which can increase Atliq's revenue . 
+
+Performance Insights:
+To find the performance of the company in diffrent regions I then created another page focusing on the regional revenue and profit change with the previous year 
+revenue .So to get that I created a line and clusted column chart showcasing the revenue of that year along with revenue of previous year and displayed the 
+profit margine % of this year. I also created a bar chart showcasing the zonal profit margine and added a slider using what if parameter to set the profit target % 
+and to see which of Atiq's zone / market / product qualifies the target profit %.
+
+
+Dashboard : https://app.powerbi.com/view?r=eyJrIjoiNjk5MmZhNWYtYzcwOS00ZDQ3LTg0NzktNjIxMTk3Mzk1ZTFiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9
+
+
+
+
+
+
+
+
+
+
+
