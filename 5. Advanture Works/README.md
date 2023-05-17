@@ -10,6 +10,8 @@
 
 **Data:** Adventure Works Sales Data provided on Kaggle for public use. [Link](https://www.kaggle.com/datasets/ukveteran/adventure-works?select=AdventureWorks_Customers.csv.)
 
+**Dashboard Link :**  [Microsoft Power BI](https://app.powerbi.com/view?r=eyJrIjoiNTNkNmYwYjUtMWZhNi00YzZmLTgwMjktZTRlMThiNzFiNjIzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+
 **Data Cleaning, Preprocessing, Modelling, Analysis and Data Visualisation:** Microsoft power BI was adopted to solve these problems. The data was imported and first transformed in the power query, for instance the yearly sales were in separate files and needed to be appended. Additional columns were also created on the date table such as Month, month name, year etc. After making necessary transformation the data was modelled using by connecting the dimension tables to the facts table in other to form a star schema. The data was then analysed and visualized to address the business problems. Please see each of the figures to further understand the analysis. 
 
 ## **Business Problems**
@@ -34,7 +36,7 @@ Q6. What information can be generated on the return rate of the products based o
 
 •	In terms of product category , accessories generate more amount of orders followed by bikes and clothing .
 
-•	In terms of sub-category, Tires and Tubes , Helmets, Road-Bikes are the top 3 performing products in terms of total orders.
+• In terms of sub-category, Tires and Tubes , Helmets, Road-Bikes are the top 3 performing products in terms of total orders.
 
 •	Water Bottle was the top product that drove the most orders, while Mountain-200-black Bike generated the most profit.
 
