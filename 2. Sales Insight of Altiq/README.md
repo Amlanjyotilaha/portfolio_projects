@@ -30,7 +30,7 @@ The sales director may avoid depending on Excel files and sugar-coated reports f
 3.	Performed ETL and data cleaning on the imported data.
 4.	In the currency there were two types of currencies in transactions, performed currency conversion to make all the currency type same
 5.	Created measure for needs and used them for creating visuals in Power BI.
-6.	After the initial report reviewed by the stakeholders, made changes to the report based on the review commends.
+6.	After the initial report reviewed by the stakeholders, made changes to the report based on the review comments.
 
 ## Questions
 
