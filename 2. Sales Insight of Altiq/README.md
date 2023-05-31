@@ -10,7 +10,7 @@
 
 **Data:** [Atliq Technologies Sales Data ](https://codebasics.io/resources/sales-insights-data-analysis-project)
 
-**Dashboard Link:** [Microsoft Power BI](https://app.powerbi.com/view?r=eyJrIjoiNjk5MmZhNWYtYzcwOS00ZDQ3LTg0NzktNjIxMTk3Mzk1ZTFiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+**Dashboard Link:** [Atliq Sales Insight](https://app.powerbi.com/view?r=eyJrIjoiNjk5MmZhNWYtYzcwOS00ZDQ3LTg0NzktNjIxMTk3Mzk1ZTFiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 **Data Cleaning, Analysis, and Data Visualisation:** SQL and Microsoft power BI 
 
