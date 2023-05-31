@@ -7,7 +7,7 @@
 **Data:** We are provided with the Excel datasheet which contains the employee’s data for 3 months between April 2022-June 2022. Data set contains employee’s attendance data along with attendance keys Eg: SL --> Sick Leave, P --> Present, PL --> Paid Leave, WFH --> Work From Home
 ([Atliq Technologies HR Data LINK](https://codebasics.io/resources/resume-project-data-analytics))
 
-**Dashboard Link:** [Microsoft Power BI]( https://app.powerbi.com/view?r=eyJrIjoiNmE5MWNjMTItODE4NC00ZWEyLTk5NWQtNmM1OWQ3NTgwZTg4IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+**Dashboard Link:**  [Atliq Technologies HR Data Analysis]( https://app.powerbi.com/view?r=eyJrIjoiNmE5MWNjMTItODE4NC00ZWEyLTk5NWQtNmM1OWQ3NTgwZTg4IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 
 **Data Cleaning, Analysis, and Data Visualisation:** Excel and Microsoft Power BI 
 
