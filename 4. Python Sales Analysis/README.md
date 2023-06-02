@@ -7,7 +7,7 @@ The data contains hundreds of thousands of electronic purchases broken down by m
 *	**Framework**- Jupyter Notebook
 *	**Language**- Python
 *	**Libraries**- Numpy, Panda
-*	**Plot Lib**- Seaborn, Matplot
+*	**Plot Lib**- Seaborn, Matplotlib
 
 **Data set** : [Data Set Link](https://github.com/KeithGalli/Pandas-Data-Science-Tasks/tree/master/SalesAnalysis/Sales_Data)
 
