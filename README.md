@@ -62,3 +62,18 @@ In this section I will list Data Analytics Projects briefly describing the techn
 **Technology:** Power BI , MS Excel
 
 **Result:** This business metrics can assist the organization in tracking essential business Insights (sales, revenue, profit, and returns), comparing regional performance, analyzing product-level trends and forecasting, and identifying high-value customers, encouraging business stakeholders to follow up and understand and make informed data driven decisions.This dashboard with high data quality could help in improving performance metrics like increasing the revenue and profit distribution by at least 10% in the next year by running promotional offers on top performing products. The dashboard also shows the top performing product in terms of highest number of orders and most profit generated to leverage the potential of the products for the upcoming year. Loss-making items with a low order volume and a high return rate can also be discontinued in order to optimize the balance sheet for best practices using root cause analysis.
+
+
+# Digital Music Store SQL_Analysis
+
+[Project Link](https://github.com/Amlanjyotilaha/portfolio_projects/tree/main/7.%20Music%20Store%20Analysis%20SQL)
+
+### **Data Analysis for Digital Music Store using SQL**
+
+This project will show you how to analyze the music playlist database. I have examine the dataset with SQL and help the store understand its business growth by answering simple and complex questions based on geopgraphical growth, purchase power, total revenue, genre performance, music band popularity, best city in terms of revenue and best customer in terms of purchase rate.
+
+This analysis will provide great insight to the stake holders to take right and effective decisions.
+
+**Tools:**
+1. Postgre SQL (PgAdmin4)
+2. SQL Server Management Studio
