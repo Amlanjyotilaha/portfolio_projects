@@ -96,3 +96,31 @@ This analysis will provide great insight to the stake holders to take right and 
 ## **Software Used**:
 1.	MS SQL Server Management Studio
 2.	Microsoft Excel
+
+
+# ROAD ACCIDENT ANALYSIS - SQL - POWER BI - EXCEL
+
+[Project Link](https://github.com/Amlanjyotilaha/portfolio_projects/tree/main/11.%20Road%20Accident%20Analysis)
+
+## **Problem Statement:**
+**Requirements:**
+The client wants to create a Road Accident Dashboard for the years 2021 and 2022 so that they can have insights on the below requirements.
+
+•	Primary KPI- Total Casualties and Total Accident Values for Current Year and YoY growth
+
+•	Primary KPI- Total Casualties by Accident severity for Current Year and YoY growth
+
+•	Secondary KPIs- Total Casualties with respect to Vehicle Type for the Current Year
+
+•	Monthly trend showing comparisons of Casualties for the Current Year and the Previous Year
+
+•	Casualties by Road Type for the Current Year
+
+•	Current Year Casualties by Area / Location and by Day / Night
+
+•	Total Casualties and Total Accidents by Location
+
+Software Use:
+1.	MS EXCEL
+2.	Microsoft Power BI
+3.	MS SQL Server
